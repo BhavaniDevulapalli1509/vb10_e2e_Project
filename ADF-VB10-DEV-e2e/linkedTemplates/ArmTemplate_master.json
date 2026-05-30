@@ -207,6 +207,10 @@
 			"type": "string",
 			"defaultValue": "Tr_sample_excel"
 		},
+		"tr_sample_event_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/e1effb96-7f0c-4f59-997f-ca3f9da2bc96/resourceGroups/VB_DEV_B10_ETL/providers/Microsoft.Storage/storageAccounts/blob01vb10dev"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -415,6 +419,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"tr_sample_event_properties_typeProperties_scope": {
+						"value": "[parameters('tr_sample_event_properties_typeProperties_scope')]"
 					},
 					"Tr_sample_csv_properties_master_PL1_parameters_Trigger": {
 						"value": "[parameters('Tr_sample_csv_properties_master_PL1_parameters_Trigger')]"

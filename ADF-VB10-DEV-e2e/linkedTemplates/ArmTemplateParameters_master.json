@@ -155,6 +155,9 @@
 		"Tr_sample_excel_properties_master_PL1_parameters_Trigger": {
 			"value": "Tr_sample_excel"
 		},
+		"tr_sample_event_properties_typeProperties_scope": {
+			"value": "/subscriptions/e1effb96-7f0c-4f59-997f-ca3f9da2bc96/resourceGroups/VB_DEV_B10_ETL/providers/Microsoft.Storage/storageAccounts/blob01vb10dev"
+		},
 		"containerUri": {
 			"value": ""
 		},

@@ -1,0 +1,15 @@
+{
+	"name": "ADF-VB10-DEV-e2e",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "westus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9636e105-6a69-4a43-add6-4d0c6370c680",
+		"tenantId": "bd7d92b9-e52c-4784-b253-474d1173e3d5"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"name": "DS_LKUP_EXCEL_METADATA",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_LKUP_EXCEL_METADATA",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

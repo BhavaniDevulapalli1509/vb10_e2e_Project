@@ -1,0 +1,162 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF-VB10-DEV-e2e"
+		},
+		"LS_AzureSql_DB_password": {
+			"value": ""
+		},
+		"LS_AzureSql_csv_lkup_job_password": {
+			"value": ""
+		},
+		"LS_Azure_Sql_DB_Cloud_password": {
+			"value": ""
+		},
+		"LS_Azure_Sql_csv_excel_password": {
+			"value": ""
+		},
+		"LS_BULK_PARQUET_AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_PARQUETAzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_PARQUETAzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"LS_EXCEL_PARQUET_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_EXCEL_PARQUET_AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_PARQUET_AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_PARQUET_AzureDataLakeStorage_OUTPUT_accountKey": {
+			"value": ""
+		},
+		"LS_LKUP_EXCEL_METADATA_password": {
+			"value": ""
+		},
+		"LS_Snowflake_password": {
+			"value": ""
+		},
+		"Ls_eventtrigger_adls_accountKey": {
+			"value": ""
+		},
+		"PL_BULK_PARQUET_AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"event_triger_adls_ls_accountKey": {
+			"value": ""
+		},
+		"event_trigger_ls_connectionString": {
+			"value": ""
+		},
+		"ls_event_trigger_snowflake_connectionString": {
+			"value": ""
+		},
+		"ls_restapi_AzureDataLakeStorage_parquet_accountKey": {
+			"value": ""
+		},
+		"AzureBlobStorage_LS_SNOWFLAKE_PARQUET_sasUri": {
+			"value": ""
+		},
+		"LS_AzureSql_DB_properties_typeProperties_server": {
+			"value": "vb10-sql-server-01.database.windows.net"
+		},
+		"LS_AzureSql_DB_properties_typeProperties_database": {
+			"value": "sql-db-vb10-dev01"
+		},
+		"LS_AzureSql_DB_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LS_AzureSql_csv_lkup_job_properties_typeProperties_server": {
+			"value": "vb10-sql-server.database.windows.net"
+		},
+		"LS_AzureSql_csv_lkup_job_properties_typeProperties_database": {
+			"value": "sql-db-vb10-dev"
+		},
+		"LS_AzureSql_csv_lkup_job_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_server": {
+			"value": "vb10-sql-server.database.windows.net"
+		},
+		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_database": {
+			"value": "sql-db-vb10-dev"
+		},
+		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LS_Azure_Sql_csv_excel_properties_typeProperties_server": {
+			"value": "vb10-sql-server.database.windows.net"
+		},
+		"LS_Azure_Sql_csv_excel_properties_typeProperties_database": {
+			"value": "sql-db-vb10-dev"
+		},
+		"LS_Azure_Sql_csv_excel_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LS_BULK_PARQUET_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://adlsdevvb10raw001.dfs.core.windows.net/"
+		},
+		"LS_CSV_PARQUETAzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://adlsdevsourcevb10.dfs.core.windows.net/"
+		},
+		"LS_CSV_PARQUETAzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adlsdevvb10raw001.dfs.core.windows.net/"
+		},
+		"LS_EXCEL_PARQUET_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevvb10raw001.dfs.core.windows.net/"
+		},
+		"LS_EXCEL_PARQUET_AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://adlsdevsourcevb10.dfs.core.windows.net/"
+		},
+		"LS_JSON_PARQUET_AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adlsdevvb10raw001.dfs.core.windows.net/"
+		},
+		"LS_JSON_PARQUET_AzureDataLakeStorage_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsdevsourcevb10.dfs.core.windows.net/"
+		},
+		"LS_LKUP_EXCEL_METADATA_properties_typeProperties_server": {
+			"value": "vb10-sql-server-01.database.windows.net"
+		},
+		"LS_LKUP_EXCEL_METADATA_properties_typeProperties_database": {
+			"value": "sql-db-vb10-dev01"
+		},
+		"LS_LKUP_EXCEL_METADATA_properties_typeProperties_userName": {
+			"value": "sqladmin"
+		},
+		"LS_Snowflake_properties_typeProperties_database": {
+			"value": "DBAZURESNOW"
+		},
+		"Ls_eventtrigger_adls_properties_typeProperties_url": {
+			"value": "https://adlsdevsourcevb10.dfs.core.windows.net/"
+		},
+		"PL_BULK_PARQUET_AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://adlsdevsrcvb10.dfs.core.windows.net/"
+		},
+		"RestService_ls_parquet_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/YLEaqu/data"
+		},
+		"event_triger_adls_ls_properties_typeProperties_url": {
+			"value": "https://adlsdevsrcvb10.dfs.core.windows.net/"
+		},
+		"ls_restapi_AzureDataLakeStorage_parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevsrcvb10.dfs.core.windows.net/"
+		},
+		"Tr_sample_csv_properties_master_PL1_parameters_Trigger": {
+			"value": "Tr_sample_csv"
+		},
+		"Tr_sample_excel_properties_master_PL1_parameters_Trigger": {
+			"value": "Tr_sample_excel"
+		},
+		"tr_event_trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/a5c32458-355d-4de4-a5bd-a7b7019d5315/resourceGroups/VB_DEV_B10_ETL/providers/Microsoft.Storage/storageAccounts/blobvb10dev"
+		}
+	}
+}

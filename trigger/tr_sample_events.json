@@ -1,0 +1,24 @@
+{
+	"name": "tr_sample_events",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Pl_event_trigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/output/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/e1effb96-7f0c-4f59-997f-ca3f9da2bc96/resourceGroups/VB_DEV_B10_ETL/providers/Microsoft.Storage/storageAccounts/blob01vb10dev",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

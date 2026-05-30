@@ -15,7 +15,7 @@
 		"typeProperties": {
 			"blobPathBeginsWith": "/output/blobs/",
 			"ignoreEmptyBlobs": true,
-			"scope": "/subscriptions/a5c32458-355d-4de4-a5bd-a7b7019d5315/resourceGroups/VB_DEV_B10_ETL/providers/Microsoft.Storage/storageAccounts/blobvb10dev",
+			"scope": "/subscriptions/e1effb96-7f0c-4f59-997f-ca3f9da2bc96/resourceGroups/VB_DEV_B10_ETL/providers/Microsoft.Storage/storageAccounts/blob01vb10dev",
 			"events": [
 				"Microsoft.Storage.BlobCreated"
 			]

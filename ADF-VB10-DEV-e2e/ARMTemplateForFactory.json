@@ -101,11 +101,11 @@
 		},
 		"LS_AzureSql_csv_lkup_job_properties_typeProperties_server": {
 			"type": "string",
-			"defaultValue": "vb10-sql-server.database.windows.net"
+			"defaultValue": "vb10-sql-server-01.database.windows.net"
 		},
 		"LS_AzureSql_csv_lkup_job_properties_typeProperties_database": {
 			"type": "string",
-			"defaultValue": "sql-db-vb10-dev"
+			"defaultValue": "sql-db-vb10-dev01"
 		},
 		"LS_AzureSql_csv_lkup_job_properties_typeProperties_userName": {
 			"type": "string",
@@ -113,11 +113,11 @@
 		},
 		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_server": {
 			"type": "string",
-			"defaultValue": "vb10-sql-server.database.windows.net"
+			"defaultValue": "vb10-sql-server-01.database.windows.net"
 		},
 		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_database": {
 			"type": "string",
-			"defaultValue": "sql-db-vb10-dev"
+			"defaultValue": "sql-db-vb10-dev01"
 		},
 		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_userName": {
 			"type": "string",
@@ -125,11 +125,11 @@
 		},
 		"LS_Azure_Sql_csv_excel_properties_typeProperties_server": {
 			"type": "string",
-			"defaultValue": "vb10-sql-server.database.windows.net"
+			"defaultValue": "vb10-sql-server-01.database.windows.net"
 		},
 		"LS_Azure_Sql_csv_excel_properties_typeProperties_database": {
 			"type": "string",
-			"defaultValue": "sql-db-vb10-dev"
+			"defaultValue": "sql-db-vb10-dev01"
 		},
 		"LS_Azure_Sql_csv_excel_properties_typeProperties_userName": {
 			"type": "string",
@@ -185,7 +185,7 @@
 		},
 		"PL_BULK_PARQUET_AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://adlsdevsrcvb10.dfs.core.windows.net/"
+			"defaultValue": "https://adlsdevsourcevb10.dfs.core.windows.net/"
 		},
 		"RestService_ls_parquet_properties_typeProperties_url": {
 			"type": "string",
@@ -197,7 +197,7 @@
 		},
 		"ls_restapi_AzureDataLakeStorage_parquet_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://adlsdevsrcvb10.dfs.core.windows.net/"
+			"defaultValue": "https://adlsdevsourcevb10.dfs.core.windows.net/"
 		},
 		"Tr_sample_csv_properties_master_PL1_parameters_Trigger": {
 			"type": "string",
@@ -206,10 +206,6 @@
 		"Tr_sample_excel_properties_master_PL1_parameters_Trigger": {
 			"type": "string",
 			"defaultValue": "Tr_sample_excel"
-		},
-		"tr_event_trigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/a5c32458-355d-4de4-a5bd-a7b7019d5315/resourceGroups/VB_DEV_B10_ETL/providers/Microsoft.Storage/storageAccounts/blobvb10dev"
 		}
 	},
 	"variables": {
@@ -2801,36 +2797,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/master_PL1')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/tr_event_trigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "PL_event_trigger",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/output/blobs/",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('tr_event_trigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/PL_event_trigger')]"
 			]
 		},
 		{

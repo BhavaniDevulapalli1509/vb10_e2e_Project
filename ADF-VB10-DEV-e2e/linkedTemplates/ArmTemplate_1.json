@@ -13,7 +13,7 @@
 		},
 		"ls_restapi_AzureDataLakeStorage_parquet_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://adlsdevsrcvb10.dfs.core.windows.net/"
+			"defaultValue": "https://adlsdevsourcevb10.dfs.core.windows.net/"
 		}
 	},
 	"variables": {

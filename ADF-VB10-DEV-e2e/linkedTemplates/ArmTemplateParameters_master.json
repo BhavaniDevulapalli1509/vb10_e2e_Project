@@ -75,28 +75,28 @@
 			"value": "sqladmin"
 		},
 		"LS_AzureSql_csv_lkup_job_properties_typeProperties_server": {
-			"value": "vb10-sql-server.database.windows.net"
+			"value": "vb10-sql-server-01.database.windows.net"
 		},
 		"LS_AzureSql_csv_lkup_job_properties_typeProperties_database": {
-			"value": "sql-db-vb10-dev"
+			"value": "sql-db-vb10-dev01"
 		},
 		"LS_AzureSql_csv_lkup_job_properties_typeProperties_userName": {
 			"value": "sqladmin"
 		},
 		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_server": {
-			"value": "vb10-sql-server.database.windows.net"
+			"value": "vb10-sql-server-01.database.windows.net"
 		},
 		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_database": {
-			"value": "sql-db-vb10-dev"
+			"value": "sql-db-vb10-dev01"
 		},
 		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_userName": {
 			"value": "sqladmin"
 		},
 		"LS_Azure_Sql_csv_excel_properties_typeProperties_server": {
-			"value": "vb10-sql-server.database.windows.net"
+			"value": "vb10-sql-server-01.database.windows.net"
 		},
 		"LS_Azure_Sql_csv_excel_properties_typeProperties_database": {
-			"value": "sql-db-vb10-dev"
+			"value": "sql-db-vb10-dev01"
 		},
 		"LS_Azure_Sql_csv_excel_properties_typeProperties_userName": {
 			"value": "sqladmin"
@@ -138,7 +138,7 @@
 			"value": "https://adlsdevsourcevb10.dfs.core.windows.net/"
 		},
 		"PL_BULK_PARQUET_AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://adlsdevsrcvb10.dfs.core.windows.net/"
+			"value": "https://adlsdevsourcevb10.dfs.core.windows.net/"
 		},
 		"RestService_ls_parquet_properties_typeProperties_url": {
 			"value": "https://retoolapi.dev/YLEaqu/data"
@@ -147,16 +147,13 @@
 			"value": "https://adlsdevsrcvb10.dfs.core.windows.net/"
 		},
 		"ls_restapi_AzureDataLakeStorage_parquet_properties_typeProperties_url": {
-			"value": "https://adlsdevsrcvb10.dfs.core.windows.net/"
+			"value": "https://adlsdevsourcevb10.dfs.core.windows.net/"
 		},
 		"Tr_sample_csv_properties_master_PL1_parameters_Trigger": {
 			"value": "Tr_sample_csv"
 		},
 		"Tr_sample_excel_properties_master_PL1_parameters_Trigger": {
 			"value": "Tr_sample_excel"
-		},
-		"tr_event_trigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/a5c32458-355d-4de4-a5bd-a7b7019d5315/resourceGroups/VB_DEV_B10_ETL/providers/Microsoft.Storage/storageAccounts/blobvb10dev"
 		},
 		"containerUri": {
 			"value": ""

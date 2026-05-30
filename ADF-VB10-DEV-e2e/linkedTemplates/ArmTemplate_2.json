@@ -7,10 +7,6 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ADF-VB10-DEV-e2e"
 		},
-		"tr_event_trigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/a5c32458-355d-4de4-a5bd-a7b7019d5315/resourceGroups/VB_DEV_B10_ETL/providers/Microsoft.Storage/storageAccounts/blobvb10dev"
-		},
 		"Tr_sample_csv_properties_master_PL1_parameters_Trigger": {
 			"type": "string",
 			"defaultValue": "Tr_sample_csv"
@@ -1068,36 +1064,6 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/PL_CSV_Parquet')]",
 				"[concat(variables('factoryId'), '/pipelines/PL_EXCEL_PARQUET')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/tr_event_trigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "PL_event_trigger",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/output/blobs/",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('tr_event_trigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/PL_event_trigger')]"
 			]
 		},
 		{

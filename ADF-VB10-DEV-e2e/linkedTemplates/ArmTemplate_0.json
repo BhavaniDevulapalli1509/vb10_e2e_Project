@@ -97,11 +97,11 @@
 		},
 		"LS_AzureSql_csv_lkup_job_properties_typeProperties_server": {
 			"type": "string",
-			"defaultValue": "vb10-sql-server.database.windows.net"
+			"defaultValue": "vb10-sql-server-01.database.windows.net"
 		},
 		"LS_AzureSql_csv_lkup_job_properties_typeProperties_database": {
 			"type": "string",
-			"defaultValue": "sql-db-vb10-dev"
+			"defaultValue": "sql-db-vb10-dev01"
 		},
 		"LS_AzureSql_csv_lkup_job_properties_typeProperties_userName": {
 			"type": "string",
@@ -109,11 +109,11 @@
 		},
 		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_server": {
 			"type": "string",
-			"defaultValue": "vb10-sql-server.database.windows.net"
+			"defaultValue": "vb10-sql-server-01.database.windows.net"
 		},
 		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_database": {
 			"type": "string",
-			"defaultValue": "sql-db-vb10-dev"
+			"defaultValue": "sql-db-vb10-dev01"
 		},
 		"LS_Azure_Sql_DB_Cloud_properties_typeProperties_userName": {
 			"type": "string",
@@ -121,11 +121,11 @@
 		},
 		"LS_Azure_Sql_csv_excel_properties_typeProperties_server": {
 			"type": "string",
-			"defaultValue": "vb10-sql-server.database.windows.net"
+			"defaultValue": "vb10-sql-server-01.database.windows.net"
 		},
 		"LS_Azure_Sql_csv_excel_properties_typeProperties_database": {
 			"type": "string",
-			"defaultValue": "sql-db-vb10-dev"
+			"defaultValue": "sql-db-vb10-dev01"
 		},
 		"LS_Azure_Sql_csv_excel_properties_typeProperties_userName": {
 			"type": "string",
@@ -181,7 +181,7 @@
 		},
 		"PL_BULK_PARQUET_AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://adlsdevsrcvb10.dfs.core.windows.net/"
+			"defaultValue": "https://adlsdevsourcevb10.dfs.core.windows.net/"
 		},
 		"RestService_ls_parquet_properties_typeProperties_url": {
 			"type": "string",
